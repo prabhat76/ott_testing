@@ -1,0 +1,277 @@
+/* LandingPage.css */
+.landing-container {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.hero-section {
+    position: relative;
+    min-height: 700px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    margin: 0 auto;
+    padding: 40px 16px 80px;
+    text-align: center;
+    max-width: 768px;
+    padding-top: 160px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.hero-content .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content .cta-text {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.cta-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .cta-form {
+        flex-direction: row;
+    }
+    .hero-content h1 {
+        font-size: 3.125rem;
+    }
+    .hero-content .subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+.email-input {
+    height: 56px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #4a4a4a;
+    color: white;
+    border-radius: 4px;
+    padding: 0 16px;
+}
+
+.cta-button {
+    height: 56px;
+    background-color: #e50914;
+    color: white;
+    border-radius: 4px;
+    padding: 0 32px;
+    font-weight: medium;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #c11119;
+}
+
+.feature-section {
+    padding: 64px 0;
+    border-top: 8px solid #222;
+    background-color: black;
+}
+
+.feature-container {
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+    .feature-container {
+        flex-direction: row;
+    }
+}
+
+.feature-text {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+    .feature-text {
+        width: 50%;
+        margin-bottom: 0;
+        padding-right: 48px;
+    }
+    .feature-section.reverse .feature-text {
+        padding-left: 48px;
+        padding-right: 0;
+    }
+}
+
+.feature-text h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.feature-text p {
+    font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+    .feature-text h2 {
+        font-size: 3.125rem;
+    }
+    .feature-text p {
+        font-size: 1.25rem;
+    }
+}
+
+.feature-image-container {
+    width: 100%;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .feature-image-container {
+        width: 50%;
+    }
+}
+
+.feature-image {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    right: 13%;
+    bottom: 20%;
+    z-index: 0;
+    background-color: black;
+}
+
+.feature-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.download-box {
+    position: absolute;
+    left: 50%;
+    bottom: 32px;
+    transform: translateX(-50%);
+    background-color: black;
+    border: 2px solid #4a4a4a;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    z-index: 20;
+}
+
+.boxshot {
+    height: 80px;
+    margin-right: 16px;
+}
+
+.download-text {
+    flex: 1;
+}
+
+.download-status {
+    color: #0071eb;
+}
+
+.download-icon {
+    width: 48px;
+    height: 48px;
+    background-color: #0071eb;
+    border-radius: 50%;
+}
+
+.faq-section {
+    padding: 64px 16px;
+    border-top: 8px solid #222;
+    background-color: black;
+}
+
+.faq-container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.faq-container h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .faq-container h2 {
+        font-size: 3.125rem;
+    }
+}
+
+.faq-accordion {
+    margin-bottom: 32px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    background-color: #303030;
+    margin-bottom: 8px;
+    border: none;
+}
+
+.faq-trigger {
+    padding: 24px;
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: medium;
+    background: none;
+    border: none;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-trigger:hover {
+    text-decoration: none;
+}
+
+.faq-content {
+    padding: 24px;
+    padding-top: 0;
+    font-size: 1.125rem;
+    color: white;
+}
+
+.faq-toggle-icon {
+    font-size: 1.5rem;
+}
