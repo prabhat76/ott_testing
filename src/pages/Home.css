@@ -5,6 +5,12 @@
     color: white;
 }
 
+@media (prefers-color-scheme: dark) {
+    .landing-container {
+        background-color: #121212;
+    }
+}
+
 .hero-section {
     position: relative;
     min-height: 700px;

@@ -34,7 +34,7 @@ export default function LandingPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <button className="cta-button">
+              <button className="cta-button" type="button">
                 Get Started
                 <ChevronRight className="ml-2" />
               </button>
@@ -155,7 +155,7 @@ export default function LandingPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <button className="cta-button">
+              <button className="cta-button" type="button">
                 Get Started
                 <ChevronRight className="ml-2" />
               </button>
